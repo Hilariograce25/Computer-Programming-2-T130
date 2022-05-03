@@ -3,7 +3,7 @@ int main()
 {
     float originalTemp, convertedTemp;
     char option, converted;
-    printf("[f]- Fahrenheit\n[c]- Celsius\n[k]- Kelvin\n");
+    printf("TEMPERATURE CONVERTER\n\n[f]- Fahrenheit\n[c]- Celsius\n[k]- Kelvin\n\n");
     printf("Input orignal temperature value: ");
     scanf("\n%f", &originalTemp);
     printf("Select orignal temperature scale: ");
