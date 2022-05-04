@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main ()
+void main ()
 {
   FILE * fp;
   int i,n;
@@ -8,20 +8,15 @@ int main ()
   char fname[20];
 	printf(" Input the file location : ");
 	scanf("%s",fname);
-    fp = fopen(fname, "a");
-    if(fp == NULL)
-    {
-    printf("\nCan't open file or file doesn't exist.");
-    exit(0);
-    }
+	
+  fp = fopen(fname, "a");
     printf("Input how many lines to be appended : ");
     scanf("%d", &n);
+	
     for(i = 0; i < n+1;i++)
     {
-    fgets(str,sizeof str,stdin);
+    fgets(str, sizeof str, stdin);
     fputs(str, fp);
     }
-    fclose(fp);
-    
-  return 0;
+    fclose(fp); 
 }
