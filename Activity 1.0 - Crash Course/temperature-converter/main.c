@@ -72,7 +72,7 @@ int main()
     }
     else
     {
-        printf("%c is not a valid input!", converted);
+        printf("%c is not a valid input!", option);
         return -1;
     }
     printf("%.2f %c = %.2f %c", originalTemp, option, convertedTemp, converted);
