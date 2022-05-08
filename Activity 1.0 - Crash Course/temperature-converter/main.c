@@ -20,7 +20,7 @@ int main()
         {
             convertedTemp = (originalTemp - 32) * 5 / 9 + 273.15;
         }
-        else if (converted == 'f' || converted == 'f')
+        else if (converted == 'f' || converted == 'F')
         {
             convertedTemp = originalTemp;
         }
@@ -40,7 +40,7 @@ int main()
         {
             convertedTemp = originalTemp + 273.15;
         }
-        else if (converted == 'f' || converted == 'f')
+        else if (converted == 'f' || converted == 'F')
         {
             convertedTemp = (originalTemp * 9 / 5) + 32;
         }
@@ -60,7 +60,7 @@ int main()
         {
             convertedTemp = originalTemp;
         }
-        else if (converted == 'f' || converted == 'f')
+        else if (converted == 'f' || converted == 'F')
         {
             convertedTemp = (originalTemp - 273.15) * 9 / 5 + 32;
         }
